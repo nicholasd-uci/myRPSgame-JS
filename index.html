@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS- Rock, Papers, Scissors</title>
+</head>
+
+<body>
+    <script>
+
+        // Computer Choices
+        let choices = ['r', 'p', 's']
+        // Record Keeping
+        let ties = 0
+        let wins = 0
+        let losses = 0
+
+        // How Many Times the Prompt Will Show
+        for (let i = 0; i < 10; i++) {
+            // The Prompt to the User
+            let choice = prompt('What would you like to play? Choose r, p, or s')
+            // Grab the Length of choices from ^
+            let compChoice = choices[Math.floor(Math.random() * choices.length)]
+            // console.log(choice, compChoice)
+
+            // Helps when the user gives something that does not exist
+            if (choices.indexOf(choice) !== -1) {
+                // if users choice equals computer choice- its a TIE. 
+                if (choice === compChoice) {
+                    ties++
+                // We use the ${} method to recall the new value of "ties"
+                    alert(`It's a tie! Total Ties so far: ${ties}`)
+                // These are all of the "Wins" scenario
+                } else if ((choice === 'r' && compChoice === 's') ||
+                    (choice === 'P' && compChoice === 'r') ||
+                    (choice === 's' && compChoice === 'p')) {
+                    wins++
+                    alert(`You Win! Total Wins so far: ${wins}`)
+                } else  {
+                // We make the computer assume anything other that is a "Loss"
+                    losses++
+                    alert(`You lost! oh no, That makes ${losses} losses now!`)
+                    }
+                // If the users doesn't pick a valid letter
+                } else {
+                    alert('please make a valid choice!')
+                }
+        }
+        // we then use a Temp Literal with the `` and render the results using "${}" Method
+        alert(`
+        Results
+        ____________
+        Wins: ${wins}
+        losses: ${losses}
+        ties: ${ties}
+        
+        `)
+
+    </script>
+</body>
+
+</html>
