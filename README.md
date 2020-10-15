@@ -24,7 +24,7 @@
 
 ## LINKS
 
-- [javaScript101 Link] Coming Soon!
+- [myRPSgame-JS Link] Coming Soon!
 - [Github Repo Link](https://github.com/nicholasd-uci/myRPSgame-JS)
 
 - - -
