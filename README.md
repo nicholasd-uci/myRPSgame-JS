@@ -13,3 +13,4 @@
 ## Example Photos
 
 ![ask](./photos/rpsChoice.png)
+![Win](./[photos/]win.png)
