@@ -24,8 +24,9 @@
 
 ## LINKS
 
-- [myRPSgame-JS Link] Coming Soon!
+- [myRPSgame-JS Link]()
 - [Github Repo Link](https://github.com/nicholasd-uci/myRPSgame-JS)
+- [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
